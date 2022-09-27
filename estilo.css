@@ -1,0 +1,305 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        background: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    /*nombre y foto inicio*/
+    /* container */
+    
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        background: #fff;
+        margin: 50px;
+        box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+        border-left: 50px solid #fff;
+        border-right: 50 px solid #fff;
+    }
+    /* top */
+    
+    .container .top {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 40px;
+        padding-bottom: 0;
+    }
+    /* imgagen de la caja */
+    
+    .container .top .imgBx {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    /* caja */
+    
+    .container .top .imgBx .caja {
+        position: relative;
+        width: 70%;
+        min-width: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        aspect-ratio: 1;
+    }
+    /* imagen */
+    
+    .container .top .imgBx .caja img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /*texto de perfil*/
+    
+    .container .top .perfiltext {
+        position: relative;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+    }
+    /*h3 de mi nombre*/
+    
+    .container .top .perfiltext h3 {
+        font-size: 3em;
+        letter-spacing: 0.1em;
+        line-height: 1.2em;
+        font-weight: 600;
+        color: #333;
+    }
+    /*span de mi trabajo*/
+    
+    .container .top .perfiltext h3 span {
+        position: relative;
+        font-size: 0.5em;
+        font-weight: 300;
+        top: -10px;
+    }
+    /*nombre y foto final*/
+    /* ------- */
+    /* ------- */
+    /* contenido de contacto inicio */
+    /* contentido de la caja  */
+    
+    .container .contenidoBx {
+        position: relative;
+        min-height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 0 40px 40px;
+    }
+    /* h3 */
+    
+    .container .contenidoBx h3 {
+        border-left: 4px solid #D90000;
+        padding-left: 10px;
+        line-height: 1em;
+        font-weight: 600;
+        color: #333;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    /* ul */
+    
+    .container .contenidoBx ul {
+        position: relative;
+        margin: 10px 0;
+    }
+    /* li */
+    
+    .container .contenidoBx ul li {
+        list-style: none;
+        margin: 25px 0;
+        line-height: 1em;
+        color: #333;
+        cursor: pointer;
+        display: flex;
+    }
+    /* icono */
+    
+    .container .contenidoBx ul li ion-icon {
+        font-size: 1.2em;
+        margin-right: 10px;
+        color: #0042FF;
+    }
+    /* educacion */
+    
+    .container .contenidoBx ul.educacion li {
+        flex-direction: column;
+        margin: 25px 0;
+    }
+    /* los texto de h5,h4,h6 */
+    
+    h5 {
+        color: #0042FF;
+    }
+    
+    h4 {
+        color: #333;
+        font-weight: 500;
+        margin: 5px 0;
+    }
+    
+    h6 {
+        color: #666;
+        font-weight: 300;
+        font-size: 1em;
+    }
+    /* contenido de contacto final */
+    /* ------------------------- */
+    /* -------------------- */
+    /* inicio de lenguaje */
+    /* li */
+    
+    .lenguaje li {
+        flex-direction: column;
+    }
+    /* span */
+    
+    .lenguaje li span {
+        color: #333;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    /* porcentaje */
+    
+    .lenguaje .porcent {
+        position: relative;
+        width: 100%;
+        background: #e3e3e3;
+        height: 6px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        display: block;
+        overflow: hidden;
+    }
+    /* div */
+    
+    .lenguaje .porcent div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #0042FF;
+    }
+    /* final de lenguaje */
+    /* -------- */
+    /* --------- */
+    /* comienzo de interes  */
+    /*interes*/
+    
+    .container .contenidoBx ul.interes {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* li */
+    
+    .container .contenidoBx ul.interes li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 20px 0;
+    }
+    /* icono */
+    
+    .container .contenidoBx ul.interes li .icono {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: #0042FF;
+        color: #fff;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* icono ion */
+    
+    .container .contenidoBx ul.interes li .icono ion-icon {
+        color: #fff;
+        margin-right: 0;
+    }
+    /* final del interes */
+    /* perfil texto  INICIO*/
+    
+    p {
+        font-style: 300;
+    }
+    
+    .ladoDe {
+        padding-left: 40px;
+    }
+    
+    .ayuda .caja {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+    }
+    
+    .ayuda .caja .año_compañia {
+        min-width: 150px;
+        margin-bottom: 10px;
+    }
+    
+    .ayuda .caja .año_compañia h5 {
+        color: #333;
+        font-weight: 600;
+    }
+    
+    .ayuda .caja .año_compañia h5:nth-child(1) {
+        color: #0042FF;
+    }
+    
+    .ayuda .caja .texto h4 {
+        color: #0042FF;
+        font-size: 16px;
+        margin: 0;
+    }
+    /* perfil texto FINAL */
+    /* HABILIDAD INICIO */
+    
+    .ayuda.habilidad .caja {
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ayuda.habilidad .caja h4 {
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .ayuda.habilidad .caja .porcent {
+        position: relative;
+        width: 100%;
+        height: 10px;
+        background: #e3e3e3;
+    }
+    
+    .ayuda.habilidad .caja .porcent div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #0042FF;
+    }
+    /* FINAL HABILIDAD */
